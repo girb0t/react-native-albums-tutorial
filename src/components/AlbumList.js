@@ -12,13 +12,22 @@ class AlbumList extends Component {
       .then(response => this.setState({ albums: response.data }));
   }
 
-  render() {
-    return (
-      <View>
-        <Text>Album List!</Text>
+  renderAlbums() {
+    return this.state.albums.map(album =>
+      <View key={album.title}>
+        <Text>{album.title}</Text>
       </View>
     );
   }
+
+  render() {
+    return (
+      <View>
+        {this.renderAlbums()}
+      </View>
+    );
+  }
+
 }
 
 export default AlbumList;
