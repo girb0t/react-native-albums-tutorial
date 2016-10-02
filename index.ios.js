@@ -6,6 +6,7 @@ import Header from './src/components/Header';
 import AlbumList from './src/components/AlbumList';
 
 // Create a component
+// pxl - the { flex: 1 } is to make the root view scrollable...an annoying gotcha of React Native
 const App = () => (
   <View style={{ flex: 1 }}>
     <Header headerText={'Albums!'} />

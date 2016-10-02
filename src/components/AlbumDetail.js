@@ -62,7 +62,7 @@ const styles = {
   imageStyle: {
     height: 300,
     flex: 1,
-    width: null,
+    // width: null,
   }
 };
 export default AlbumDetail;
